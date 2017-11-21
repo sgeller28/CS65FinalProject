@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:onClick="onServerClick"
+        android:text="Buy" />
+
+    <Button
+        android:id="@+id/myposts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sell"
+        android:onClick="onMyPostsClick"
+        android:text="My Posts" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myposts"
+        android:onClick="onSignOutClick"
+        android:background="@color/red"
+        android:text="Sign Out" />
+
+    <Button
+        android:id="@+id/sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy"
+        android:onClick="onSellClick"
+        android:text="Sell" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:onClick = "clearClick"
+        android:text="Clear" />
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:onClick="onSignInClick"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/btnNoAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignIn"
+        android:onClick = "onAccountClick"
+        android:text="I Don't Have An Account" />
+
+
+    <EditText
+        android:id="@+id/character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnClear"
+        android:hint="Email Address" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/character"
+        android:hint="Enter Password" />
+
+
+</RelativeLayout>
+
